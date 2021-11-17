@@ -8,75 +8,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <div class="nav-bar"> <!--nav bar-->
+        <!-- Nav Bar -->
+        <div class="nav-bar"> 
+            <div id="menu">
                 <a class="large-text" href="#Profile">Profile</a>
                 <a href="#Home">Home</a>
                 <a href="#MyProfile">My Profile</a>
                 <a href="#FindConnections">Find Connections</a>
+            </div>    
                 <button class="sign-out" type="button">Sign Out</button> 
         </div>
-        <div class="container"> <!--main container-->
-            <div class="main">
-                <div class="main1"> <!--user card-->  
+        
+        <!-- main container -->
+        <div class="main-container"> 
+            
+        <!-- user card -->
+            <div class="left-container">
+                <div class="prof-card">  
                     <div class="card-header">
                         <img class="prof_pic" src="jane-m.jpg" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                         <h1>Jane Doe</h1>
-                        <h3>
-                            <img class="map-marker" src="map-marker.png" alt="Map Marker" id="location"> 
-                            Seatle
-                        </h3>
+                        <div id="location">
+                            <img class="map-marker" src="map-marker.png" alt="Map Marker"> 
+                            <h3>Seatle</h3>
+                        </div>    
                         <p>Developer | Engineer | Problem Solver<br>
                             Master of shadows and the Internet</p>
-                        <div>
                         <img class="gear" src="gear.png" alt="gear icon">
                         <a class="blue" href="#">edit profile</a>
-                        </div>
                     </div>
                 </div>  
-                <div class="main2"> <!--education-->
-                    <div class="main2-header">
-                        <span class="main-title">Education</span>
+
+        <!-- education -->
+                <div class="left-bottom"> 
+                    <div class="education-header">
+                        <span class="title">Education</span>
                     </div>
-                    <div class="main2-body">
+                    <div class="education-body">
                         <h2>Coding Dojo - Full Stac Bootcamp</h2><br>
                         <h4>Dec 2019 - Mar 2020</h4>
                         <h3>Triple black belt in Python, MERN, and C# ...</h3>
                     </div>
                 </div>
             </div>
-            <div class="nav">
-                <div class="side-nav1"> <!--connection requests-->
-                    <div class="nav1-header">
-                        <span class="nav-title">2</span>
-                        Connection Requests
+            
+        <!-- connection requests -->
+            <div class="right-container">
+                <div class="side-nav1"> 
+                    <div class="request-header">
+                        <span class="header-title">2</span>
+                        <p class="title">Connection Requests</p>
                     </div>
-                    <div class="nav1-body">
-                        <span class="con-req">
-                            <img class="photo" src="todd-s.jpg" alt="Picture of Todd S">
-                            <span>Todd E</span>
-                        </span>
-                        <span class="choice">    
-                            <img class="circle" src="accept-circle.png" alt="accept">
-                            <img class="circle" src="close-circle.png" alt="decline">
-                        </span><br>
-                        <span class="con-req">
-                            <img class="photo" src="phil-s.jpg" alt="Picture of Phil S">
-                            <span>Phil K</span>
-                        </span>
-                        <span class="choice">
-                            <img class="circle" src="accept-circle.png" alt="accept">
-                            <img class="circle" src="close-circle.png" alt="decline">
-                        </span>
+                    <div class="request-body">
+                        <div id="req1">
+                            <span class="con-req">
+                                <img class="photo" src="todd-s.jpg" alt="Picture of Todd S">
+                                <span>Todd E</span>
+                            </span>
+                            <span class="choice">    
+                                <img class="circle" src="accept-circle.png" alt="accept">
+                                <img class="circle" src="close-circle.png" alt="decline">
+                            </span><br>
+                        </div>
+                        <div id="req2">
+                            <span class="con-req">
+                                <img class="photo" src="phil-s.jpg" alt="Picture of Phil S">
+                                <span>Phil K</span>
+                            </span>
+                            <span class="choice">
+                                <img class="circle" src="accept-circle.png" alt="accept">
+                                <img class="circle" src="close-circle.png" alt="decline">
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="side-nav2"> <!--your connections-->
-                    <div class="nav2-header">
-                        <span class="nav-title">500+</span>
-                        Your Connections
+
+            <!-- your connections -->
+                <div class="side-nav2"> 
+                    <div class="connections-header">
+                        <span class="header-title">500+</span>
+                        <p class="title">Your Connections</p>
                     </div>
-                    <div class="nav2-body">
+                    <div class="connections-body">
                         <span class="your-connections">
                             <img class="photo" src="adrien-s.jpg" alt="Picture of Adrien S">
                             <span>Adrien S</span>
