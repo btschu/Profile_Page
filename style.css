@@ -177,7 +177,8 @@ a {
 #req1, #req2 {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .header-title {
@@ -210,22 +211,19 @@ a {
 .con-req {
     display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-right: 40px;
     font-size: 24px; 
 }
 
 .choice {
     display: flex;
-    align-items: center;
-    font-size: 24px;
+    justify-content: flex-end;
 }
 
 .your-connections {
     display: flex;
     align-items: center;
     font-size: 24px;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .footer {
