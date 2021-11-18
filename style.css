@@ -19,32 +19,37 @@ h4 {
     color: gray;
 }
 
-p {
+p:not(.title){
     margin-top: 15px;
 }
 
 a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
     margin-right: 20px;
 }
 
 /* nav bar */
 
-.nav-bar {
+#top {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     background-color: black;
+}
+
+.nav-bar {
     color: white;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin: 0 auto;
+    width: 920px;
 }
 
 .sign-out {
     background-color: teal;
     color: white;
-    margin-right: 290px;
     padding: 5px 15px;
     font-size: 20px;
 } 
@@ -61,13 +66,13 @@ a {
     justify-content: center;
     align-items: top;
     margin: 0 auto;
+    width: 920px;
 }
 
 /* left (top = user card, bottom = education) */
 
 .left-container {
     flex: 3;
-    margin-left: 300px;
 }
 
 .card-header {
@@ -79,10 +84,10 @@ a {
 .prof_pic {
     border-radius: 50%;
     background-color: #fff;
-    height: 75px;
+    height: 100px;
     padding: 5px;
-    margin-top: 55px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
     margin-bottom: 100px;
     border: 2px solid #999;
 }
@@ -111,6 +116,7 @@ a {
     color: blue;
     text-decoration: underline;
     margin-left: -10px;
+    font-size: 24px;
 }
 
 /* right (top = connection requests, bottom = your connections) */
@@ -132,17 +138,22 @@ a {
     height: 20px;
     margin-top: 20px;
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .right-container {
-    margin-right: 300px;
     flex: 2;
 }
 
 .title {
-    margin-bottom: 12px;
     font-size: 24px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
 }
+
 .request-header, .connections-header{
     display: flex;
     align-items: center;
@@ -169,10 +180,13 @@ a {
 }
 
 .header-title {
-    vertical-align: middle;
-    font-size: 25px;
     background-color: gray;
-    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
 }
 
 .photo {
@@ -189,7 +203,6 @@ a {
 }  
 
 .large-text{
-    margin-left: 290px;
     font-size: 35px;
 }
 
@@ -205,7 +218,6 @@ a {
     display: flex;
     align-items: center;
     font-size: 24px;
-    /* margin-left: 20px;     */
 }
 
 .your-connections {
